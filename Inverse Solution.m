@@ -72,7 +72,7 @@ for i=1:STEP
     theta = sor(1); %%得到最小奇异值
     %%变阻尼系数的阻尼最小二乘法
     if theta < sigma
-        lambda=lambda0^2*(1-(theta/sigma)^2);
+        lambda=lambda0*(1-(theta/sigma)^2);
     else
         lambda=0;
     end
